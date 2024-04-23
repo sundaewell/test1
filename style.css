@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #02075d, #0d0139);
+    color: white;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.plus-one-display {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    color: green;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.plus-one-display.show {
+    opacity: 1;
+}
+
+/* Existing CSS */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+button:active {
+    animation: bounce 0.3s ease;
+}
